@@ -1,0 +1,20 @@
+@import "normalize.css";
+
+/*!*root -> 获取根元素html*!*/
+:root {
+    --color-text: #666;
+    --color-hight-text: #ff5777;
+    --color-tint: #ff8198;
+    --color-background: #fff;
+    --font-size: 14px;
+    --line-height: 1.5;
+}
+
+/*body {*/
+/*    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "微软雅黑", Arial, sans-serif;*/
+/*    user-select: none;*/
+/*    background: var(--color-text);*/
+/*    width: 100vw;*/
+/*    !*100vw就是viewport width的简称，1vw等于视口宽度的百分之一，也就是说100vw就是视口的宽度*!*/
+/*    !*同理视口宽度为vh*!*/
+/*}*/
