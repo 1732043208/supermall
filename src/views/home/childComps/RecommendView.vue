@@ -45,7 +45,5 @@
     text-decoration: none;
     color: black;
   }
-  .recommend-item a:visited{
 
-  }
 </style>

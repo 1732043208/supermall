@@ -1,5 +1,5 @@
 <template>
-  <tab-bar>
+  <tab-bar class="tab-bar">
     <tab-bar-item lujing="/home" activeColor="#13227a">
       <img slot="item-icon" src="~assets/img/TabBar/home-inavtive.png">
       <img slot="item-icon-active" src="~assets/img/TabBar/home-active.png">
