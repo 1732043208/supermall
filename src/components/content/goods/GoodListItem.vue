@@ -1,15 +1,18 @@
 <template>
-  <div class="goods-item">
+  <div class="goods-item" @click="itemClick">
     <img :src="goodsItem.show.img" alt="" @load="imageLoad">
     <div class="goods-info">
       <p>{{goodsItem.title}}</p>
       <span class="price">{{goodsItem.price}}</span>
+      <img src="~assets/img/common/collect.png" alt="">
       <span class="collect">{{goodsItem.cfav}}</span>
     </div>
   </div>
 </template>
 
 <script>
+
+
   export default {
     name: "GoodListItem",
     props: {
@@ -23,6 +26,9 @@
     methods:{
       imageLoad(){
       this.$bus.$emit('itemImageLoad')
+      },
+      itemClick(){
+        this.$router.push('/detail/' +this.goodsItem.iid)
       }
     }
   }
@@ -54,6 +60,9 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     margin-bottom: 3px;
+  }
+  .goods-info img{
+    width: 10px;
   }
   .goods-info .price{
     color:var(--color-hight-text);
