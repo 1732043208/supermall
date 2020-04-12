@@ -74,9 +74,6 @@
         return this.goods[this.currentType].list
       }
     },
-    destroyed(){
-      console.log('sadsadasd');
-    },
     activated() {
       this.$refs.scroll.scrollTo(0, this.saveY, 0)
       this.$refs.scroll.refresh()
@@ -99,14 +96,12 @@
     mounted() {
       //3.图片加载完成的事件监听
       const refresh = debounce(this.$refs.scroll.refresh, 200)
-      this.$bus.$on('itemImageLoad', () => {
+      this.$bus.$on('homeItemImageLoad', () => {
         refresh()
       })
-
     },
     methods: {
       //事件监听相关的方法
-
       tabClick(index) {
         switch (index) {
           case 0:
@@ -118,14 +113,13 @@
           case 2:
             this.currentType = 'sell'
             break
-
         }
         this.$refs.tabControl1.currentIndex = index;
         this.$refs.tabControl2.currentIndex = index;
       },
       backClick() {
-        this.$refs.scroll.scrollTo(0, 0)
-
+        this.$refs.scroll.scrollTo(0, 0,300)
+        //第一个是x值，第二个是y值，第三个是延迟时间
       },
       contentScroll(position) {
         //1.判断BackTop是否显示

@@ -29,6 +29,7 @@
     },
     mounted() {
       //1.创建BScroll对象
+      // prototype 1不监听滚动 2/3监听
       this.scroll = new BScroll(this.$refs.wrapper, {
         click: true,
         probeType: this.probeType,
