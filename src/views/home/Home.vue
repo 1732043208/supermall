@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <nav-bar class="home-nav">
-      <slot slot="center">购物车</slot>
+      <slot slot="center">Joker商场</slot>
     </nav-bar>
     <tab-control :titles="['流行','新款','精选']"
                  @tabClick="tabClick"
