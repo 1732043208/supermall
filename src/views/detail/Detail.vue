@@ -158,7 +158,6 @@
           }
         }
 
-
         //3.是否显示回到顶部
 
         this.isShowBackTop = -position.y > 1000
@@ -175,10 +174,17 @@
         product.desc = this.goods.desc;
         product.price = this.goods.realPrice;
         product.iid = this.iid;
+        product.name = this.shop.name;
+        product.logo = this.shop.logo;
 
         //2.将商品添加到购物车里面
         // this.$store.commit('addCart',product)
-        this.$store.dispatch('addCart',product)
+        this.$store.dispatch('addCart',product).then(res=>{
+
+          //设置toast弹窗时间
+         this.$toast.show(res,2000)
+
+        })
 
       }
     }

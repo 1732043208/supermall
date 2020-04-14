@@ -1,8 +1,8 @@
 <template>
   <div class="all">
     <div class="shop-top">
-      <img :src="shop.logo">
-      <span class="title">{{shop.name}}旗舰店<span style="color: grey;margin-left: 6px">></span></span>
+      <img :src="product.logo">
+      <span class="title">{{product.name}}旗舰店<span style="color: grey;margin-left: 6px">></span></span>
     </div>
     <div id="cart-list-item">
       <div class="item-selector">
@@ -29,7 +29,7 @@
 
 <script>
   import CheckButton from "components/content/checkButton/CheckButton";
-  import {Shop, getDetail} from "network/detail";
+  import {getDetail, Shop,} from "network/detail";
 
   export default {
     name: "CartListItem",
@@ -50,13 +50,15 @@
       }
     },
     created() {
+      //1.保存传入的iid
       this.iid = this.$route.params.iid
+
+      //2.请求详情数据
       getDetail(this.iid).then(res => {
-        const {shopInfo} = res.result;
-
         //3.创建店铺信息的对象
-        this.shop = new Shop(shopInfo)
-
+        // const ShopInfo = res.result;
+        this.Shop = new Shop(res.result)
+        console.log(this.Shop);
       })
     },
     methods: {

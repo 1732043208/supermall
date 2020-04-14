@@ -10,6 +10,11 @@
     --line-height: 1.5;
 }
 
+/*解决了全选按钮因为fastclic(移动端300ms延迟)的报错*/
+* {
+  touch-action: pan-y;
+}
+
 /*body {*/
 /*    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "微软雅黑", Arial, sans-serif;*/
 /*    user-select: none;*/

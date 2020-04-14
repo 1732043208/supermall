@@ -29,6 +29,9 @@
     computed: {
       ...mapGetters(['cartList']),
     },
+    created() {
+      console.log(this.cartList);
+    },
     activated() {
       this.$refs.scroll.refresh()
     },
