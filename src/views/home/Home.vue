@@ -118,7 +118,7 @@
         this.$refs.tabControl2.currentIndex = index;
       },
       backClick() {
-        this.$refs.scroll.scrollTo(0, 0,300)
+        this.$refs.scroll.scrollTo(0, 0,400)
         //第一个是x值，第二个是y值，第三个是延迟时间
       },
       contentScroll(position) {
