@@ -26,3 +26,5 @@ npm install
 npm run serve
 ```
 
+![dd](https://github.com/1732043208/supermall/blob/master/src/assets/img/screenshots/homeA.png)
+
