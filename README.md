@@ -25,5 +25,16 @@ npm run test
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 技术栈
+
+1.Vue全家桶(vue4.x,vue-cli,vue-router,vuex)
+
+2.axios
+
+3.vant组件库
+
+4.Webpack
+
+5.better-scroll(解决移动端滚动)
+
+6.Es5及以上
