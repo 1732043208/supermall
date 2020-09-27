@@ -1,29 +1,6 @@
 # supermall
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+这是个人学习vue之后的第一个实战项目，结合vue全家桶。
 
 ### 技术栈
 
@@ -31,10 +8,21 @@ npm run lint
 
 2.axios
 
-3.vant组件库
+3.Webpack
 
-4.Webpack
+4.better-scroll(解决移动端滚动)
 
-5.better-scroll(解决移动端滚动)
+5.Es5及以上
 
-6.Es5及以上
+## 项目运行
+
+##### 1.安装依赖
+```
+npm install
+```
+
+##### 2.运行项目
+```
+npm run serve
+```
+
