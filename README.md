@@ -4,7 +4,7 @@
 
 ### 技术栈
 
-1.Vue全家桶(vue4.x,vue-cli,vue-router,vuex)
+1.Vue全家桶(vue2.x,vue-cli,vue-router,vuex)
 
 2.axios
 
